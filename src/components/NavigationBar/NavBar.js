@@ -24,8 +24,8 @@ const NavBar = () => {
       <span className='mobileMenu' onClick={() => setShowMenu(!showMenu)}><i class='bx bx-menu-alt-right'></i></span>
       <div className='mobileMenuBar' style={{display: showMenu? 'flex' : 'none'}}>
         <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-200} duration={500} className='mobileListItem' onClick={() => setShowMenu(false)}>About</Link>
-        <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-150} duration={500} className='mobileListItem' onClick={() => setShowMenu(false)}>Skills</Link>
-        <Link activeClass='active' to='projects' spy={true} smooth={true} offset={-120} duration={500} className='mobileListItem' onClick={() => setShowMenu(false)}>Projects</Link>
+        <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-100} duration={500} className='mobileListItem' onClick={() => setShowMenu(false)}>Skills</Link>
+        <Link activeClass='active' to='projects' spy={true} smooth={true} offset={-100} duration={500} className='mobileListItem' onClick={() => setShowMenu(false)}>Projects</Link>
         <Link activeClass='active' to='qualification' spy={true} smooth={true} offset={-100} duration={500} className='mobileListItem' onClick={() => setShowMenu(false)}>Qualification</Link>
         <Link activeClass='active' to='contactPage' spy={true} smooth={true} offset={-100} duration={500} className='mobileListItem' onClick={() => setShowMenu(false)}>Contact</Link>
       </div>
