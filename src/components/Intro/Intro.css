@@ -1,0 +1,136 @@
+#intro {
+    position: static;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    min-width: 750px;
+    max-width: 1200px;
+    margin: 7rem auto;
+}
+
+.introContent {
+    padding: 3rem 3rem 3rem 3rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+}
+
+.bgIntro {
+    position: absolute;
+    right: 5%;
+    object-fit: cover;
+    padding: 0.3rem;
+    z-index: -1;
+    height: 45vh;
+    min-height: 290px;
+    max-height: 290px;
+    min-width: 286px;
+    max-width: 286px;
+    box-shadow: inset 0 0 0 9px #50A060;
+    animation: profile_animate 8s ease-in-out infinite 1s;
+}
+
+@keyframes profile_animate {
+    0% {
+        border-radius: 70% 50% 40% 60%/50% 50% 70% 60%;
+    }
+
+    50% {
+        border-radius: 50% 60% 70% 50%/60% 50% 50% 70%;
+    }
+
+    100% {
+        border-radius: 70% 50% 40% 60%/50% 50% 70% 60%;
+    }
+}
+
+.hello {
+    font-size: 1.75rem;
+    font-weight: 300;
+}
+
+.introName {
+    color: #50A060;
+}
+
+.introPara {
+    font-size: medium;
+    font-weight: 300;
+    letter-spacing: 1px;
+    min-width: 705px;
+    max-width: 700px;
+}
+
+.ResumeBtn {
+    cursor: pointer;
+    font-size: Small;
+    font-weight: 500;
+    background: white;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+}
+
+.ResumeBtn:hover {
+    background: #50A060;
+    box-shadow: 5px 5px 7px #030303;
+}
+
+.ResumeBtnImg {
+    object-fit: cover;
+    height: 1rem;
+    padding-right: 0.25rem;
+}
+
+@media screen and (max-width:992px) {
+    .bgIntro {
+        position: initial;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3rem;
+        height: auto;
+        width: 40vh;
+        box-shadow: inset 0 0 0 7px #50A060;
+    }
+
+    .introContent {
+        height: auto;
+        font-size: 3vw;
+    }
+
+    .introPara {
+        font-size: medium;
+        font-weight: 300;
+        width: auto;
+    }
+
+    .hello {
+        font-size: 4.5vw;
+    }
+
+    #intro {
+        margin: 0rem auto;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .bgIntro {
+        height: auto;
+        width: 40vw;
+        box-shadow: inset 0 0 0 5px #50A060;
+    }
+
+    .introContent {
+        font-size: 7vw;
+    }
+}

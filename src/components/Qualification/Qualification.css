@@ -1,0 +1,163 @@
+#qualification {
+    /* padding: 3rem 3rem 0rem 3rem; */
+    position: static;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-width: 750px;
+    max-width: 1200px;
+    margin: 3rem auto 5rem auto;
+}
+
+.qualificationMainSubTitle {
+    font-weight: 300;
+}
+
+.qualificationTabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.qualificationButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    font-weight: 500;
+    margin: 0 2rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.qualificationActive {
+    color: #50A060;
+    font-size: x-large;
+}
+
+.qualificationButton:hover {
+    color: #50A060;
+    border-radius: 2rem;
+}
+
+.bxs-graduation {
+    font-size: 1.5rem;
+    margin-right: 0.25rem;
+}
+
+.bxs-graduationActive {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+
+.bxs-briefcase {
+    font-size: 1.5rem;
+    margin-right: 0.25rem;
+}
+
+.bxs-briefcaseActive {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+
+.qualificationContent {
+    display: none;
+}
+
+.qualificationContent-active {
+    display: block;
+}
+
+.qualificationContainer {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    padding: 2rem 4rem 3rem 3rem
+}
+
+.qualificationData {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 3rem;
+}
+
+.qualificationTitle {
+    font-size: medium;
+    font-weight: 400;
+}
+
+.qualificationSubTitle {
+    display: inline-block;
+    font-size: small;
+    font-weight: 200;
+    margin-bottom: 0.5rem;
+}
+
+.qualificationCalender {
+    font-size: medium;
+    font-weight: 200;
+}
+
+.bxs-calendar {
+    margin-right: 0.25rem;
+}
+
+.qualificationRounder {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #50A060;
+    border-radius: 50%;
+}
+
+.bxsRounderGraduation {
+    display: inline-block;
+    color: #1e1e1e;
+    font-size: 1.8rem;
+    margin: 2.5px 2px 1px 2px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
+
+.bxsRounderBriefcase {
+    display: inline-block;
+    color: #1e1e1e;
+    font-size: 1.6rem;
+    margin: 4px 3px 1px 2px;
+}
+
+.qualificationLine {
+    display: block;
+    position: relative;
+    z-index: -1;
+    width: 3px;
+    height: 95%;
+    background-color: #50A060;
+    transform: translate(16px, -10px);
+}
+
+@media screen and (max-width: 992px) {
+    #qualification {
+        margin: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .qualificationSections {
+        grid-template-columns: initial;
+    }
+
+    .qualificationButton {
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .qualificationData {
+        gap: 0.5rem;
+    }
+}
